@@ -1,0 +1,5 @@
+<md-progress-spinner [ngClass]="{'is-active': active}" [value]="progressValue" [mode]="progressMode" [color]="progressColor"></md-progress-spinner>
+<button md-fab [ngClass]="{'is-done': done}" (click)="onClick()" [color]="fabColor">
+  <md-icon class="icon">{{fabIcon}}</md-icon>
+  <md-icon class="icon-done white000">{{fabIconDone}}</md-icon>
+</button>

@@ -1,0 +1,28 @@
+{
+  "name": "md-fab-progress",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darkedges/md-fab-progress"
+  },
+  "author": {
+    "name": "Nicholas Irving",
+    "email": "developer@darkedges.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darkedges/md-fab-progress/issues"
+  },
+  "main": "md-fab-progress.umd.js",
+  "module": "md-fab-progress.js",
+  "jsnext:main": "md-fab-progress.js",
+  "typings": "md-fab-progress.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
