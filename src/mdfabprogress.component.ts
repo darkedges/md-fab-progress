@@ -3,7 +3,7 @@ import { Input, Output, EventEmitter, Component, OnChanges, SimpleChanges } from
 @Component({
   selector: 'md-fab-progress',
   templateUrl: './mdfabprogress.component.html',
-  styleUrls: ['./mdfabprogress.component.scss']
+  styleUrls: ['./mdfabprogress.component.scss'],
 })
 export class MdFabProgressComponent implements OnChanges {
   @Input() fabColor = 'accent';

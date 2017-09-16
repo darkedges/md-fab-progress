@@ -27,10 +27,12 @@
     "url": "https://github.com/darkedges/md-fab-progress/issues"
   },
   "devDependencies": {
+    "@angular/cdk": "^2.0.0-beta.10",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/compiler-cli": "^4.0.0",
     "@angular/core": "^4.0.0",
+    "@angular/material": "^2.0.0-beta.10",
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@compodoc/compodoc": "^1.0.0-beta.10",
