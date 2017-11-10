@@ -2,7 +2,7 @@
   position: relative;
   display: inline-block;
   button[mat-fab]{
-    margin: 14px;
+    margin: 6px;
     transition: background 250ms linear;
     .icon-done {
       display: none;
@@ -24,8 +24,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 84px;
-    width: 84px;
+    height: 68px !important;
+    width: 68px !important;
     opacity: 0;
     transition: opacity 250ms linear;
     &.is-active {
