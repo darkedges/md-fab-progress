@@ -1,5 +1,9 @@
 # md-fab-progress
 
+This work is a port and enhancement of [https://codepen.io/mindstorm/pen/ezJZzJ](https://codepen.io/mindstorm/pen/ezJZzJ) developed by [https://codepen.io/mindstorm/](https://codepen.io/mindstorm/)
+
+The enhancement is to an additional action to the Progress Spinner Floating Action Button.
+
 ## Installation
 
 To install this library, run:
@@ -23,20 +27,20 @@ create a file `material.module.ts`
 ```typescript
 import {NgModule} from '@angular/core';
 import {
-  MdButtonModule,
-  MdCardModule,
-  MdIconModule,
-  MdProgressSpinnerModule,
-  MdRadioModule
+  MatButtonModule,
+  MatCardModule,
+  MatIconModule,
+  MatProgressSpinnerModule,
+  MatRadioModule
 } from '@angular/material';
 
 @NgModule({
   exports: [
-    MdButtonModule,
-    MdCardModule,
-    MdIconModule,
-    MdProgressSpinnerModule,
-    MdRadioModule
+    MatButtonModule,
+    MatCardModule,
+    MatIconModule,
+    MatProgressSpinnerModule,
+    MatRadioModule
   ]
 })
 export class AppMaterialModule {}
@@ -50,7 +54,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MdFabProgressModule } from 'md-fab-progress';
+import { MdFabProgressModule } from '@darkedegs/md-fab-progress';
 
 import { AppComponent } from './app.component';
 import { AppMaterialModule } from './material.module';
@@ -108,7 +112,7 @@ Once the component is imported use the following:
 ```typescript
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
-import { MdFABProgress } from 'md-fab-progress';
+import { MdFABProgress } from '@darkedges/md-fab-progress';
 
 @Component({
   selector: 'app-root',
@@ -153,13 +157,13 @@ export class AppComponent {
 
 ```xml
 <!-- You can now use your library component in app.component.html -->
-<md-card>
-  <md-card-content>
+<mat-card>
+  <mat-card-content>
     <md-fab-progress [fabColor]="fabProgress.fab.color" [progressColor]="fabProgress.progress.color" [fabIcon]="fabProgress.fab.icon"
       [fabIconDone]="fabProgress.fab.iconDone" [progressValue]="fabProgress.progress.value" [progressMode]="fabProgress.progress.mode"
       (fabAction)="reset($event)"></md-fab-progress>
-  </md-card-content>
-</md-card>
+  </mat-card-content>
+</mat-card>
 ```
 
 ## Attributes
@@ -182,7 +186,7 @@ There is an example in the [example](example) directory. It requires `angular-cl
 cd example
 npm install -g @angular/cli
 npm install
-ng serve
+ng serve --preserve-symlink
 ```
 
 ## Development

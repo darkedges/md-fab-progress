@@ -1,6 +1,6 @@
 {
-  "name": "md-fab-progress",
-  "version": "0.1.0",
+  "name": "@darkedges/md-fab-progress",
+  "version": "0.1.1",
   "scripts": {
     "build": "gulp build",
     "build:watch": "gulp",
@@ -20,27 +20,32 @@
     "email": "developer@darkedges.com"
   },
   "keywords": [
-    "angular"
+    "angular",
+    "material",
+    "fab",
+    "progress spinner"
   ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/darkedges/md-fab-progress/issues"
   },
   "devDependencies": {
-    "@angular/cdk": "^2.0.0-beta.10",
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/compiler-cli": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/material": "^2.0.0-beta.10",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/animations": "^4.4.4",
+    "@angular/cdk": "^2.0.0-beta.12",
+    "@angular/common": "^4.4.4",
+    "@angular/compiler": "^4.4.4",
+    "@angular/compiler-cli": "^4.4.4",
+    "@angular/core": "^4.4.4",
+    "@angular/material": "^2.0.0-beta.12",
+    "@angular/platform-browser": "^4.4.4",
+    "@angular/platform-browser-dynamic": "^4.4.4",
     "@compodoc/compodoc": "^1.0.0-beta.10",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
     "codelyzer": "~2.0.0",
     "core-js": "^2.4.1",
     "del": "^2.2.2",
+    "glob": "^7.1.2",
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "gulp-rollup": "^2.11.0",
@@ -61,7 +66,15 @@
     "rxjs": "^5.1.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
-    "typescript": "~2.2.0",
+    "typescript": "^2.6.1",
+    "zone.js": "^0.8.4"
+  },
+  "peerDependencies": {
+    "@angular/animations": "^4.4.4",
+    "@angular/cdk": "^2.0.0-beta.12",
+    "@angular/core": "^4.4.4",
+    "@angular/material": "^2.0.0-beta.12",
+    "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
   "engines": {
