@@ -1,7 +1,7 @@
 :host {
   position: relative;
   display: inline-block;
-  button[md-fab]{
+  button[mat-fab]{
     margin: 14px;
     transition: background 250ms linear;
     .icon-done {
@@ -20,7 +20,7 @@
         color: #ffff;
     }
   }
-  md-progress-spinner {
+  mat-progress-spinner {
     position: absolute;
     top: 0;
     left: 0;
