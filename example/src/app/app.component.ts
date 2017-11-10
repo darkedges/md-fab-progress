@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
-import { MdFABProgress } from 'md-fab-progress';
+import { MdFABProgress } from '@darkedges/md-fab-progress';
 
 @Component({
   selector: 'app-root',
