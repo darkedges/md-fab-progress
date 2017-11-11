@@ -1,4 +1,5 @@
 import { Input, Output, EventEmitter, Component, OnChanges, SimpleChanges } from '@angular/core';
+import { MdFABProgressEvent } from './mdfabprogressevent.class';
 
 @Component({
   selector: 'md-fab-progress',
@@ -13,7 +14,7 @@ export class MdFabProgressComponent implements OnChanges {
   @Input() progressColor = 'primary';
   @Input() progressMode = 'determinate';
   @Input() progressValue = 50;
-  @Output() fabAction: EventEmitter<string> = new EventEmitter();
+  @Output() fabAction: EventEmitter<Event> = new EventEmitter();
 
   active = true;
   done = false;
@@ -21,9 +22,11 @@ export class MdFabProgressComponent implements OnChanges {
   constructor() {
   }
 
-  public onClick() {
+  public onClick(event: Event) {
     if (!this.active && !this.done) {
-      this.fabAction.emit('start');
+      event.preventDefault();
+      event.stopPropagation();
+      this.fabAction.emit(event);
     }
   }
 

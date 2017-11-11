@@ -1,5 +1,5 @@
 <mat-progress-spinner [ngClass]="{'is-active': active}" [value]="progressValue" [mode]="progressMode" [color]="progressColor" diameter="68"></mat-progress-spinner>
-<button mat-fab [ngClass]="{'is-done': done}" (click)="onClick()" [color]="fabColor">
+<button mat-fab [ngClass]="{'is-done': done}" (click)="onClick($event)" [color]="fabColor">
   <mat-icon class="icon">{{fabIcon}}</mat-icon>
   <mat-icon class="icon-done white000">{{fabIconDone}}</mat-icon>
 </button>

@@ -5,6 +5,7 @@ import { MdFabProgressComponent } from './mdfabprogress.component';
 
 export * from './mdfabprogress.component';
 export * from './mdfabprogress.class';
+export * from './mdfabprogressevent.class';
 
 @NgModule({
   imports: [
